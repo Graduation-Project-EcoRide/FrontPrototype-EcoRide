@@ -1,0 +1,334 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>EcoRide - Notifications</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#005316",
+                    "surface-variant": "#e0e3e0",
+                    "secondary-fixed": "#bcedd7",
+                    "outline": "#6f7a6c",
+                    "on-primary-fixed": "#002105",
+                    "background": "#f7faf7",
+                    "inverse-on-surface": "#eef1ee",
+                    "on-surface": "#181c1b",
+                    "on-secondary": "#ffffff",
+                    "tertiary": "#4e6450",
+                    "primary-fixed-dim": "#7adc7d",
+                    "on-background": "#181c1b",
+                    "inverse-surface": "#2d3130",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#e6e9e6",
+                    "on-surface-variant": "#3f4a3d",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#ecefec",
+                    "surface": "#f7faf7",
+                    "tertiary-fixed": "#d0e9d1",
+                    "primary": "#006e21",
+                    "on-primary-container": "#067625",
+                    "surface-dim": "#d8dbd8",
+                    "on-tertiary-fixed-variant": "#374c3a",
+                    "secondary-fixed-dim": "#a0d1bc",
+                    "secondary-container": "#b9ead4",
+                    "outline-variant": "#becab9",
+                    "on-secondary-fixed-variant": "#214f3f",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#556b57",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#d2ebd2",
+                    "primary-container": "#98fb98",
+                    "surface-tint": "#006e21",
+                    "tertiary-fixed-dim": "#b5cdb5",
+                    "on-secondary-fixed": "#002116",
+                    "surface-container-highest": "#e0e3e0",
+                    "on-secondary-container": "#3e6b5a",
+                    "primary-fixed": "#96f996",
+                    "surface-container-low": "#f1f4f1",
+                    "surface-bright": "#f7faf7",
+                    "on-tertiary-fixed": "#0b2011",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#7adc7d",
+                    "secondary": "#396756"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-gap-md": "24px",
+                    "stack-gap-lg": "40px",
+                    "container-padding": "24px",
+                    "stack-gap-sm": "12px",
+                    "gutter": "16px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "headline-xl": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-sm": [
+                            "Inter"
+                    ],
+                    "label-md": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-xl": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-sm": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-md": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col md:flex-row antialiased">
+<!-- Web Side Navigation (NavigationDrawer) -->
+<aside class="hidden md:flex h-full w-80 rounded-r-lg bg-surface shadow-lg fixed inset-y-0 left-0 z-50 flex-col py-stack-gap-md border-r border-surface-variant/30">
+<div class="px-6 mb-8 flex items-center gap-4">
+<img alt="User profile avatar" class="w-12 h-12 rounded-full object-cover" data-alt="A bright, high-key close up portrait of a professional looking individual smiling warmly, embodying an approachable and trustworthy driver persona in a clean, organic aesthetic context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArBhpDYlpYcGNQKcqGjyXbU_dwWkh2rb8ITvyD0TJuIePODQC4KCGH04dcUog5xFw_eoJAJvw0TyNGWws9Cf_uXSCKQynKWS-WJGHihotH6F0VNiif15ix9ZZ5tGzNWWp9AHFSUc-FwjdQhqKPn8KAfhLy3R1lNmljVhwNRr78ExzompANUUa6cvRv797Ab22iuEMfnzfaX_lWkHDVJGJdw8_JK37tZ9IHqQSuQ00GtarGU3Ji1utUWQSdnwaRGRjpIG-vXrQ8lLk">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Green Traveler</h2>
+<p class="font-label-md text-label-md text-secondary">Eco Level 4</p>
+</div>
+</div>
+<nav class="flex-1 flex flex-col gap-2">
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-colors rounded-full group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">home</span>
+<span class="font-body-md text-body-md">Home</span>
+</a>
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-colors rounded-full group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">directions_car</span>
+<span class="font-body-md text-body-md">Rides</span>
+</a>
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-colors rounded-full group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">person</span>
+<span class="font-body-md text-body-md">Profile</span>
+</a>
+<!-- Active State: Notifications -->
+<a class="bg-primary-container text-on-primary-container rounded-full mx-2 px-4 py-3 flex items-center gap-4 opacity-100 transition-opacity duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">notifications</span>
+<span class="font-body-md text-body-md font-semibold">Notifications</span>
+</a>
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-colors rounded-full group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">settings</span>
+<span class="font-body-md text-body-md">Settings</span>
+</a>
+</nav>
+<div class="mt-auto px-6 pt-4 border-t border-surface-variant/30">
+<div class="bg-tertiary-container/30 rounded-lg p-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary">eco</span>
+<span class="font-label-md text-label-md text-on-surface">12.4kg CO2 saved</span>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col md:ml-80 min-h-screen pb-24 md:pb-0">
+<!-- TopAppBar (Mobile & Web) -->
+<header class="docked full-width top-0 flat no-shadows items-center w-full py-4 sticky z-40 bg-surface-container-high border-b border-outline-variant/30"><div class="flex items-center w-full max-w-7xl mx-auto relative px-container-padding">
+<div class="flex-1"></div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-primary absolute left-1/2 -translate-x-1/2">EcoRide</h1>
+<div class="flex-1 flex justify-end">
+<button class="p-2 hover:bg-surface-container-highest rounded-full transition-colors relative flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">notifications</span>
+<span class="absolute top-2 right-2 w-2.5 h-2.5 bg-error border-2 border-surface-container-high rounded-full"></span>
+</button>
+</div>
+</div></header>
+<!-- Page Content -->
+<div class="flex-1 w-full max-w-3xl mx-auto px-container-padding pt-6 pb-stack-gap-lg">
+<div class="mb-stack-gap-md flex justify-between items-center">
+<h1 class="font-headline-lg text-headline-lg text-on-surface"><div class="flex items-center gap-2"><span class="material-symbols-outlined cursor-pointer hover:bg-surface-container-high rounded-full p-1 -ml-2">chevron_left</span>Alerts</div></h1>
+<button class="font-label-md text-label-md text-primary hover:text-on-primary-container transition-colors">Mark all as read</button>
+</div>
+<!-- Notifications List -->
+<div class="flex flex-col gap-stack-gap-sm">
+<!-- Unread Eco Milestone -->
+<article class="bg-surface rounded-lg p-6 flex gap-4 items-start hover:bg-surface-container transition-colors cursor-pointer border border-surface-variant/20 shadow-sm relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="bg-primary-container text-on-primary-container p-3 rounded-full flex-shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Eco-Hero Milestone Reached!</h3>
+<span class="font-label-md text-label-md text-primary whitespace-nowrap ml-2">Just now</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">You've officially saved 50kg of CO2 using EcoRide. Thank you for making a difference for our planet. Tap to view your impact report.</p>
+<div class="mt-3 flex gap-2">
+<span class="bg-tertiary-container/50 text-on-tertiary-container font-label-md text-label-md px-3 py-1 rounded-full">Achievement</span>
+</div>
+</div>
+</article>
+<!-- Ride Confirmation -->
+<article class="bg-surface rounded-lg p-6 flex gap-4 items-start hover:bg-surface-container transition-colors cursor-pointer border border-surface-variant/40 relative group">
+<div class="bg-secondary-container text-on-secondary-container p-3 rounded-full flex-shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">directions_car</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Ride Confirmed: Downtown</h3>
+<span class="font-label-md text-label-md text-on-surface-variant whitespace-nowrap ml-2">10:42 AM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Your ride with Michael in an EV Polestar 2 is scheduled for 2:00 PM today. Please be at the pickup point.</p>
+<div class="mt-4 p-3 bg-surface-container-low rounded-[16px] flex items-center justify-between border border-surface-variant/30">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Pickup</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold mt-0.5">142 Oak Street</span>
+</div>
+<button class="text-primary font-label-md text-label-md hover:underline">View Map</button>
+</div>
+</div>
+</article>
+<!-- Driver Message -->
+<article class="bg-surface rounded-lg p-6 flex gap-4 items-start hover:bg-surface-container transition-colors cursor-pointer border border-surface-variant/40 relative group">
+<div class="relative flex-shrink-0">
+<img alt="Driver profile" class="w-12 h-12 rounded-full object-cover border-2 border-surface-container" data-alt="A softly lit, natural portrait of a male driver smiling casually in a bright, modern setting, utilizing a clean, airy color palette to evoke trust and sustainable lifestyle themes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdrX6-6RcDky6aLq2sgdyTO9fMxH9YbmZQq9sI5O0DDBBvo3Wxqea32VM0c4y2USGX7NIbXdqHzLZCYCEIAgNPPn1AleomkCoLGLEoJO_o1GrLfp6c9uzbUmyrExOvKm0-UDNp7O3GmIz0QzhT65E06_lP5_RRUKJYX289BhKMWpdn7_v3e-CCHjJCZV3Yc3OgP9BqWsK7Lo88pEhSgi1EslJQmSxemDm9F18S-n_ZrESPHYvMCTf64QKWgW2alHhSgpM02romztA">
+<div class="absolute -bottom-1 -right-1 bg-surface rounded-full p-0.5">
+<div class="bg-primary text-on-primary rounded-full p-1 w-5 h-5 flex items-center justify-center">
+<span class="material-symbols-outlined text-[12px]">chat</span>
+</div>
+</div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Message from Alex</h3>
+<span class="font-label-md text-label-md text-on-surface-variant whitespace-nowrap ml-2">Yesterday</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">"Hey! I've arrived a bit early and parked near the main entrance. No rush, take your time."</p>
+<div class="mt-3">
+<button class="bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md px-4 py-2 rounded-full transition-colors border border-surface-variant/50">Reply</button>
+</div>
+</div>
+</article>
+<!-- System Alert -->
+<article class="bg-surface rounded-lg p-6 flex gap-4 items-start hover:bg-surface-container transition-colors cursor-pointer border border-surface-variant/40 relative group opacity-75">
+<div class="bg-surface-variant text-on-surface-variant p-3 rounded-full flex-shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Receipt Available</h3>
+<span class="font-label-md text-label-md text-on-surface-variant whitespace-nowrap ml-2">Oct 12</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Your receipt for the ride to Airport Terminal 2 is now available to download.</p>
+</div>
+</article>
+</div>
+<div class="mt-stack-gap-md text-center">
+<p class="font-body-sm text-body-sm text-on-surface-variant">No older notifications</p>
+</div>
+</div>
+</main>
+<!-- Mobile Bottom Navigation (BottomNavBar) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe bg-surface-container docked full-width bottom-0 rounded-t-lg">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-6 py-2 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-active:scale-90 transition-transform">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-6 py-2 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-active:scale-90 transition-transform">directions_car</span>
+<span class="font-label-md text-label-md">Rides</span>
+</a><a class="flex flex-col items-center justify-center text-on-surface-variant px-6 py-2 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-active:scale-90 transition-transform">map</span>
+<span class="font-label-md text-label-md">Map</span>
+</a>
+<!-- Active State: Alerts (Matches Notifications intent) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-6 py-2 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-active:scale-90 transition-transform">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</a>
+</nav>
+
+
+</body></html>

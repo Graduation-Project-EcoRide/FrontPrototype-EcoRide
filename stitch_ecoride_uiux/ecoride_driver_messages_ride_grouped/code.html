@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>EcoRide - Messages</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        /* Safe area padding for mobile bottoms */
+        .pb-safe {
+            padding-bottom: env(safe-area-inset-bottom, 20px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "secondary-fixed": "#d7e4ec",
+                            "on-background": "#191c1d",
+                            "background": "#f8f9fa",
+                            "outline": "#6e7976",
+                            "surface-container-highest": "#e1e3e4",
+                            "inverse-primary": "#84d5c5",
+                            "secondary": "#546067",
+                            "primary-container": "#00695c",
+                            "tertiary": "#004f46",
+                            "tertiary-fixed": "#8df5e4",
+                            "surface": "#f8f9fa",
+                            "on-secondary-fixed": "#111d23",
+                            "primary-fixed-dim": "#84d5c5",
+                            "surface-container-lowest": "#ffffff",
+                            "inverse-on-surface": "#f0f1f2",
+                            "error": "#ba1a1a",
+                            "tertiary-container": "#00695e",
+                            "on-error-container": "#93000a",
+                            "on-primary-container": "#94e5d5",
+                            "on-secondary-fixed-variant": "#3c494f",
+                            "error-container": "#ffdad6",
+                            "on-tertiary": "#ffffff",
+                            "surface-container": "#edeeef",
+                            "surface-dim": "#d9dadb",
+                            "surface-variant": "#e1e3e4",
+                            "on-surface-variant": "#3e4946",
+                            "primary-fixed": "#a0f2e1",
+                            "tertiary-fixed-dim": "#70d8c8",
+                            "on-tertiary-container": "#81e8d7",
+                            "on-tertiary-fixed-variant": "#005048",
+                            "primary": "#004f45",
+                            "on-secondary-container": "#5a666d",
+                            "on-primary-fixed": "#00201b",
+                            "on-error": "#ffffff",
+                            "surface-container-low": "#f3f4f5",
+                            "on-surface": "#191c1d",
+                            "inverse-surface": "#2e3132",
+                            "secondary-fixed-dim": "#bbc8d0",
+                            "on-tertiary-fixed": "#00201c",
+                            "on-secondary": "#ffffff",
+                            "on-primary-fixed-variant": "#005046",
+                            "secondary-container": "#d7e4ec",
+                            "surface-tint": "#046b5e",
+                            "outline-variant": "#bec9c5",
+                            "on-primary": "#ffffff",
+                            "surface-container-high": "#e7e8e9",
+                            "surface-bright": "#f8f9fa"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "1rem",
+                            "lg": "2rem",
+                            "xl": "3rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "base": "8px",
+                            "xs": "4px",
+                            "gutter": "16px",
+                            "md": "16px",
+                            "sm": "12px",
+                            "margin-mobile": "20px",
+                            "margin-desktop": "40px",
+                            "xl": "32px",
+                            "lg": "24px"
+                    },
+                    "fontFamily": {
+                            "headline-md": ["Plus Jakarta Sans"],
+                            "headline-sm": ["Plus Jakarta Sans"],
+                            "label-lg": ["Plus Jakarta Sans"],
+                            "body-lg": ["Plus Jakarta Sans"],
+                            "headline-lg-mobile": ["Plus Jakarta Sans"],
+                            "body-md": ["Plus Jakarta Sans"],
+                            "headline-lg": ["Plus Jakarta Sans"],
+                            "label-sm": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                            "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                            "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                            "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                            "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky bg-surface shadow-sm z-40">
+<div class="flex items-center justify-between px-margin-mobile w-full h-16">
+<!-- Leading Icon (Empty for centering) -->
+<div class="w-10"></div>
+<!-- Headline / Brand -->
+<div class="font-headline-md text-headline-md font-bold text-primary truncate flex-1 text-center">
+                EcoRide
+            </div>
+<!-- Trailing Icon -->
+<button aria-label="Notifications" class="w-10 h-10 flex items-center justify-center text-primary cursor-pointer active:scale-95 duration-200 hover:bg-surface-container rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 overflow-y-auto px-margin-mobile pt-lg pb-[100px] hide-scrollbar max-w-3xl mx-auto w-full"><div class="space-y-xl">
+<!-- Ride Section 1 -->
+<section>
+<h2 class="font-label-lg text-label-lg text-primary mb-sm uppercase tracking-wider px-1">To Downtown - 2:30 PM</h2>
+<div class="flex flex-col gap-base">
+<button class="w-full flex items-center gap-sm p-sm bg-surface-container-lowest rounded-DEFAULT shadow-sm border border-transparent hover:border-primary-fixed-dim transition-all active:scale-[0.98] text-left group">
+<div class="relative shrink-0">
+<img alt="Passenger Sarah" class="w-12 h-12 rounded-full object-cover border-2 border-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzHODnO684bWrlPyUIbuFOS7N0XRSI1GpZJ29VoUXrwGZZooLtvWXhfmWzRJlUHPv8TFwTeNU3HVSeo_XiT3SK4DtkiqTDtFZCI2-FLZXK4xCfZU7g_hP1b2Pk64rPomGLTLM-BRSiurNuSkzpEujI5wSi4CQPhu165dZLmdEpIgjpfOUvhNWPMaBzLuIU14EFO5mfBPYrrWk1ENkATJCnsSwRHPkTeYlkQjflL9jFfHJ9cMb5FlCzI-V_DuIGpp5fZP0nC-sB8ng"/>
+<div class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-primary rounded-full border-2 border-surface-container-lowest shadow-sm"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-headline-sm text-headline-sm text-on-background truncate">Sarah L.</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">2m ago</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate pr-4">I'm standing near the blue sign.</p>
+</div>
+</button>
+</div>
+</section>
+<!-- Ride Section 2 -->
+<section>
+<h2 class="font-label-lg text-label-lg text-primary mb-sm uppercase tracking-wider px-1">To Northtown - 5:00 PM</h2>
+<div class="flex flex-col gap-xs bg-surface-container-low rounded-DEFAULT overflow-hidden">
+<!-- Mike R. -->
+<button class="w-full flex items-center gap-sm p-sm border border-transparent hover:bg-surface-container transition-all active:scale-[0.98] text-left group">
+<div class="relative shrink-0">
+<img alt="Passenger Mike" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlTVYYOFDhclql2QwdtJA1bp1OjklgabD5kWqrsZo3nbizIMFe7AMnhrDFJdHHpT-fBA5Wj1iozoFoIDz8E7drVMCVdXY9ybnpbQ_Ae_i_Mf2YzZ8Na5SZCUw3M_mEyfBfVBtRNL09mmjIXx5zNQIYCqbhzZifIH_-wz-H5OnC8rpeA1lzdwmQqbcLXpr0c2lnMdbtAaR5l83qygODyNIaPUr9fHUXmMsOMoo2ovZmXNMuPqPubt--V50QWZsq4b4p1V3zIHdKP3U"/>
+</div>
+<div class="flex-1 min-w-0 border-b border-surface-variant pb-xs group-last:border-0 group-last:pb-0">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-label-lg text-label-lg text-on-background truncate">Mike R.</span>
+<span class="font-label-sm text-label-sm text-outline">Yesterday</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate pr-4">Thanks for the smooth ride!</p>
+</div>
+</button>
+<!-- Elena L. -->
+<button class="w-full flex items-center gap-sm p-sm border border-transparent hover:bg-surface-container transition-all active:scale-[0.98] text-left group">
+<div class="relative shrink-0">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm text-headline-sm">EL</div>
+</div>
+<div class="flex-1 min-w-0 border-b border-surface-variant pb-xs group-last:border-0 group-last:pb-0">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-label-lg text-label-lg text-on-background truncate">Elena L.</span>
+<span class="font-label-sm text-label-sm text-outline">Tue</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate pr-4">Are you at the south entrance?</p>
+</div>
+</button>
+<!-- Martha K. -->
+<button class="w-full flex items-center gap-sm p-sm border border-transparent hover:bg-surface-container transition-all active:scale-[0.98] text-left group">
+<div class="relative shrink-0">
+<img alt="Passenger Martha" class="w-12 h-12 rounded-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmr9ZdkHq8_53Lc0zjH9t0W0_DSExVb_qgYzRggQaObVPDlwvGHyDJe_9cagldj0HnjEXlGgLSrr-mwfekdQ9xoJhdudC_eP7yZNg33tXFj3v5rehOGGY_9yMwmBRYET205yFIY6Jg9fMiEx8ChC5-duzq5N4oLm85hxiQbmP2RsWoIIsHtIDdjbK34bwVPnWZEdMpd4FoE7xgAGNv15vO_MVP5eIjKSq13_yTWOiBUDzDRilOi0lb1roH_o_-cEYlUB8XzgNlqW4"/>
+</div>
+<div class="flex-1 min-w-0 group-last:border-0">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-label-lg text-label-lg text-outline truncate">Martha K.</span>
+<span class="font-label-sm text-label-sm text-outline">Mon</span>
+</div>
+<p class="font-body-md text-body-md text-outline-variant truncate pr-4">Trip completed.</p>
+</div>
+</button>
+</div>
+</section>
+</div></main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe bg-surface-container shadow-[0_-4px_10px_rgba(0,0,0,0.05)] md:hidden">
+<!-- Home (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-all active:scale-90 duration-150 group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<!-- Messages (ACTIVE) -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-6 py-1 transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="font-label-sm text-label-sm font-bold">Messages</span>
+</a>
+<!-- Map (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-all active:scale-90 duration-150 group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform" data-icon="map">map</span>
+<span class="font-label-sm text-label-sm">Map</span>
+</a>
+<!-- Settings (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-all active:scale-90 duration-150 group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform" data-icon="settings">settings</span>
+<span class="font-label-sm text-label-sm">Settings</span>
+</a>
+</nav>
+<!-- Desktop Side Nav (Hidden on Mobile, Visible on md+) -->
+<!-- Implementation implied by md:hidden on bottom nav, standard practice to have side nav for desktop -->
+<aside class="hidden md:flex flex-col fixed left-0 top-16 bottom-0 w-64 bg-surface-container border-r border-outline-variant p-lg z-30">
+<nav class="flex flex-col gap-sm">
+<a class="flex items-center gap-md px-md py-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-lg text-label-lg">Home</span>
+</a>
+<a class="flex items-center gap-md px-md py-sm rounded-DEFAULT bg-primary-container text-on-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="font-label-lg text-label-lg font-bold">Messages</span>
+</a>
+<a class="flex items-center gap-md px-md py-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-label-lg text-label-lg">Map</span>
+</a>
+<a class="flex items-center gap-md px-md py-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-highest transition-colors mt-auto" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-lg text-label-lg">Settings</span>
+</a>
+</nav>
+</aside>
+</body></html>

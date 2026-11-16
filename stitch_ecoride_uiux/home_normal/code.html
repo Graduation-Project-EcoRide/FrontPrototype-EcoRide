@@ -1,0 +1,364 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>EcoRide - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#d2ebd2",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f1f4f1",
+                        "surface-container": "#ecefec",
+                        "on-tertiary-fixed": "#0b2011",
+                        "on-secondary-fixed-variant": "#214f3f",
+                        "on-primary-fixed-variant": "#005316",
+                        "surface-container-highest": "#e0e3e0",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#96f996",
+                        "primary-fixed-dim": "#7adc7d",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#f7faf7",
+                        "on-secondary-fixed": "#002116",
+                        "surface-container-high": "#e6e9e6",
+                        "secondary-fixed-dim": "#a0d1bc",
+                        "secondary": "#396756",
+                        "outline-variant": "#becab9",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f7faf7",
+                        "secondary-container": "#b9ead4",
+                        "secondary-fixed": "#bcedd7",
+                        "inverse-primary": "#7adc7d",
+                        "inverse-on-surface": "#eef1ee",
+                        "inverse-surface": "#2d3130",
+                        "on-tertiary-container": "#556b57",
+                        "on-secondary-container": "#3e6b5a",
+                        "primary": "#006e21",
+                        "on-surface-variant": "#3f4a3d",
+                        "background": "#f7faf7",
+                        "outline": "#6f7a6c",
+                        "surface-dim": "#d8dbd8",
+                        "tertiary-fixed": "#d0e9d1",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#002105",
+                        "primary-container": "#98fb98",
+                        "tertiary-fixed-dim": "#b5cdb5",
+                        "tertiary": "#4e6450",
+                        "on-background": "#181c1b",
+                        "surface-tint": "#006e21",
+                        "on-tertiary-fixed-variant": "#374c3a",
+                        "on-primary-container": "#067625",
+                        "surface-variant": "#e0e3e0",
+                        "error": "#ba1a1a",
+                        "on-surface": "#181c1b",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-padding": "24px",
+                        "stack-gap-lg": "40px",
+                        "stack-gap-sm": "12px",
+                        "stack-gap-md": "24px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.surface');
+            color: theme('colors.on-surface');
+            -webkit-font-smoothing: antialiased;
+        }
+        .pb-safe {
+            padding-bottom: env(safe-area-inset-bottom, 20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col font-body-md text-body-md bg-surface text-on-surface"><header class="bg-surface-container-high border-b border-outline-variant sticky top-0 z-40 w-full">
+  <div class="flex items-center justify-center px-container-padding py-4 max-w-7xl mx-auto relative">
+    <h1 class="font-headline-lg text-headline-lg font-bold text-primary dark:text-primary-fixed text-center">EcoRide</h1>
+    <button class="absolute right-container-padding p-2 text-on-surface-variant hover:text-primary transition-colors">
+      <span class="material-symbols-outlined">notifications</span>
+    </button>
+  </div>
+</header>
+<!-- TopAppBar -->
+
+<!-- Main Content Canvas (Empty for now) -->
+<main class="flex-grow flex flex-col px-container-padding py-stack-gap-md gap-stack-gap-md max-w-7xl mx-auto w-full pb-32"><div class="w-full max-w-md mx-auto space-y-gutter">
+<!-- Wallet Card -->
+<div class="bg-surface-container p-6 rounded-lg border border-outline-variant shadow-sm">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h2 class="font-label-md text-on-surface-variant uppercase tracking-wider mb-1">Available Balance</h2>
+<p class="font-headline-lg text-primary">15.00 JOD</p>
+</div>
+<div class="bg-primary-container p-2 rounded-full">
+<span class="material-symbols-outlined text-on-primary-container">account_balance_wallet</span>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary font-bold py-3 rounded-full flex items-center justify-center gap-2 hover:bg-on-primary-fixed-variant transition-colors active:scale-[0.98]" onclick="document.getElementById('charge-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined">add_circle</span>
+      Charge Account
+    </button>
+</div>
+<!-- Booked Rides Section -->
+<div class="space-y-4 pt-4">
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Booked Rides</h2>
+<!-- Ride Card -->
+<!-- Pending Ride Card -->
+<div class="bg-surface-container-lowest rounded-lg border border-outline/10 p-6 shadow-[0_4px_24px_rgba(11,61,46,0.05)] hover:shadow-[0_2px_12px_rgba(11,61,46,0.08)] transition-shadow">
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img alt="Driver Alex M." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxczGCi-4f0NWE_LLFCFb6zj6BpU40_Lvehoyni3sJ-vsmYMObpebw1GhWKDnoH-vjKfp96p6XBxcjSJDnCv3rbojVIGfnv-2BzTZ3GZf0uzMw1gLMy_Cy8M9_LIbVE_1dSaKphLQcqkLaqS6t-v0lSBXq1hpo4TmKbvgxGxa6Uqc2A8h2zTS63XqD_f6FR4izyjf2dCDWo0w7k3wA-V76e1G0q9MW1oWm6nuFZDI2tuyzwP-_gLyfo1zoMoqs69szcZ3AQZsBPqI">
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Alex M.</h3>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="">4.9&nbsp;<br>(120 rides)</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2"><div class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-full font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event_seat</span>
+<span class="">Seats 2/3</span>
+</div>
+<div class="bg-[#FEF9C3] text-[#854D0E] px-3 py-1 rounded-full font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">pending</span>
+<span class="">Pending</span>
+</div>
+<div class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+<span class="">2.5kg CO2 saved</span>
+</div>
+</div>
+</div>
+<div class="relative pl-8 mb-6 border-l-2 border-dashed border-outline-variant ml-2 space-y-6">
+<div class="relative">
+<div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-primary border-2 border-surface-container-lowest"></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">08:00 AM • Today</p>
+<p class="font-body-lg text-body-lg font-semibold text-on-surface">Downtown Transit Center</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-secondary border-2 border-surface-container-lowest"></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">08:45 AM • Today</p>
+<p class="font-body-lg text-body-lg font-semibold text-on-surface">Tech Park North</p>
+</div>
+</div>
+<div class="flex gap-4 pt-4 border-t border-outline/10">
+<button class="flex-1 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md py-3 rounded-full transition-colors flex justify-center items-center gap-2">
+<span class="material-symbols-outlined">chat</span>
+      Message Driver
+    </button>
+<button class="flex-1 border-2 border-primary text-primary font-label-md text-label-md py-3 rounded-full hover:bg-primary-container/20 transition-colors flex justify-center items-center gap-2">
+<span class="material-symbols-outlined">cancel</span>
+      Cancel Ride
+    </button>
+</div>
+</div>
+<!-- Booked Ride Card -->
+<div class="bg-surface-container-lowest rounded-lg border border-outline/10 p-6 shadow-[0_4px_24px_rgba(11,61,46,0.05)] hover:shadow-[0_2px_12px_rgba(11,61,46,0.08)] transition-shadow mt-4">
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img alt="Driver Sam K." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkrP5sLlYRUn0u9xVisVLQBZL85N-cr5UNexev1GVUpRFhE4R6C3_sz5Hf3EhGFcryQjRIoQk0u7P0-ptuhtsuvTS3GDnQD5g0g4aKMS8Qu2tcxhWfxH8nAbNxCfQX4QDzH3GdRJm3KMc79gnxnm96mDiJwJzM6Gu7CCJndl9BlNP5T_EFyJWGP4jFlvJ0-N1tbANzAuIcjb7vY6Q7mF2Tq7ihImD0wi-8uk6it7F34uRffktxEip8ZMCQkWHqs4PgXyxyLXQl1Ig">
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Sam K.</h3>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="">4.8&nbsp;<br>(85 rides)</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2"><div class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-full font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event_seat</span>
+<span class="">Seats 1/4</span>
+</div>
+<div class="bg-[#DCFCE7] text-[#166534] px-3 py-1 rounded-full font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span class="">Booked</span>
+</div>
+<div class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+<span class="">1.8kg CO2 saved</span>
+</div>
+</div>
+</div>
+<div class="relative pl-8 mb-6 border-l-2 border-dashed border-outline-variant ml-2 space-y-6">
+<div class="relative">
+<div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-primary border-2 border-surface-container-lowest"></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">10:30 AM • Today</p>
+<p class="font-body-lg text-body-lg font-semibold text-on-surface">Central Station</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-secondary border-2 border-surface-container-lowest"></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">11:15 AM • Today</p>
+<p class="font-body-lg text-body-lg font-semibold text-on-surface">City Library</p>
+</div>
+</div>
+<div class="flex gap-4 pt-4 border-t border-outline/10">
+<button class="flex-1 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md py-3 rounded-full transition-colors flex justify-center items-center gap-2">
+<span class="material-symbols-outlined">chat</span>
+      Message Driver
+    </button>
+<button class="flex-1 border-2 border-primary text-primary font-label-md text-label-md py-3 rounded-full hover:bg-primary-container/20 transition-colors flex justify-center items-center gap-2">
+<span class="material-symbols-outlined">cancel</span>
+      Cancel Ride
+    </button>
+</div>
+</div>
+</div></div></main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-surface-container dark:bg-surface-container-highest docked full-width bottom-0 rounded-t-lg shadow-lg fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe">
+<!-- Active Item: Home -->
+<button class="flex flex-col items-center justify-center bg-primary-container dark:bg-on-primary-fixed-variant text-on-primary-container dark:text-primary-fixed rounded-xl px-6 py-2 scale-90 transition-all duration-200 hover:text-primary dark:hover:text-primary-fixed-dim">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: &quot;FILL&quot; 1;">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</button>
+<!-- Inactive Item: My Rides -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-6 py-2 hover:text-primary dark:hover:text-primary-fixed-dim transition-colors">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: &quot;FILL&quot; 0;">directions_car</span>
+<span class="font-label-md text-label-md">Rides</span>
+</button><button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-6 py-2 hover:text-primary dark:hover:text-primary-fixed-dim transition-colors">
+  <span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">map</span>
+  <span class="font-label-md text-label-md">Map</span>
+</button>
+<!-- Inactive Item: Alerts -->
+<!-- Inactive Item: Settings -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-6 py-2 hover:text-primary dark:hover:text-primary-fixed-dim transition-colors">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: &quot;FILL&quot; 0;">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</button>
+</nav>
+<!-- SideNav (Web / Desktop Only) - Hidden on mobile as per rules -->
+<nav class="hidden md:flex bg-surface dark:bg-surface-dim shadow-lg h-full w-80 rounded-r-lg fixed inset-y-0 left-0 z-50 flex-col py-stack-gap-md pt-24">
+<div class="px-6 mb-8 flex items-center gap-4">
+<img alt="User profile avatar" class="w-12 h-12 rounded-full object-cover" data-alt="A close up portrait photo of a young smiling woman with a blurred outdoor background, lit by bright natural sunlight in a soft modern organic style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH8fKAxHGXLx09GMRq9FYhfjKZpxZ0kbcWiW3xxOTxnT6gTSUINrLnh5vXqgyjx_66ACA3igWhgQwTYXLgYqGX1gTHhJcuCAQRMakM7TnOfdmMekCJlmBFni3vq02cJManzvl615G3aDcqsOJP426Vr9rvVPAeRnqup8XgUDWVCbUKSgwgRVym2zLLHo7dSd-q0IIHMxg2-lJ70fe3jdS-pgmuRqEb8RgI3KmDZ4ehWrp1SD5lrhtdIoLXZI6B_Y4dItWGGBJdolo">
+<div>
+<div class="font-body-md text-body-md font-bold text-on-surface">Green Traveler</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">12.4kg CO2 saved</div>
+</div>
+</div>
+<!-- Active Item: Home -->
+<button class="bg-primary-container dark:bg-on-primary-fixed-variant text-on-primary-container dark:text-primary-fixed rounded-full mx-2 px-4 py-3 flex items-center gap-4 opacity-80 transition-opacity duration-150 hover:bg-surface-container-high dark:hover:bg-surface-container-highest">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">home</span>
+<span class="font-body-md text-body-md">Home</span>
+</button>
+<!-- Inactive Item: My Rides -->
+<button class="text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors rounded-full">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">directions_car</span>
+<span class="font-body-md text-body-md">Rides</span>
+</button>
+<!-- Inactive Item: Profile -->
+<button class="text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors rounded-full">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">person</span>
+<span class="font-body-md text-body-md">Profile</span>
+</button>
+<!-- Inactive Item: Notifications -->
+<button class="text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors rounded-full">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">notifications</span>
+<span class="font-body-md text-body-md">Notifications</span>
+</button>
+<!-- Inactive Item: Settings -->
+<button class="text-on-surface-variant dark:text-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors rounded-full">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">settings</span>
+<span class="font-body-md text-body-md">Settings</span>
+</button>
+</nav>
+<!-- Charge Account Modal -->
+<div class="hidden fixed inset-0 z-[60] flex items-center justify-center bg-black/50 px-4" id="charge-modal">
+<div class="bg-surface dark:bg-surface-dim w-full max-w-md rounded-lg p-6 shadow-xl relative overflow-hidden">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary" onclick="document.getElementById('charge-modal').classList.add('hidden')">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h3 class="font-headline-md text-on-surface mb-6">Charge Account</h3>
+<div class="space-y-4 mb-8">
+<div class="p-4 bg-surface-container-low rounded-lg">
+<div class="flex justify-between items-center">
+<div>
+<p class="text-label-md text-on-surface-variant mb-1 uppercase">Cliq Name</p>
+<p class="font-body-md font-bold">EcoRide_JO</p>
+</div>
+<button class="p-2 hover:bg-surface-container rounded-full text-primary">
+<span class="material-symbols-outlined">content_copy</span>
+</button>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low rounded-lg">
+<div class="flex justify-between items-center">
+<div>
+<p class="text-label-md text-on-surface-variant mb-1 uppercase">WhatsApp Number</p>
+<p class="font-body-md font-bold">+962 79 123 4567</p>
+</div>
+<button class="p-2 hover:bg-surface-container rounded-full text-primary">
+<span class="material-symbols-outlined">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-on-surface-variant uppercase">Instructions</h4>
+<div class="flex gap-4">
+<span class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">1</span>
+<p class="font-body-md">Send money via Cliq or WhatsApp Pay.</p>
+</div>
+<div class="flex gap-4">
+<span class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">2</span>
+<p class="font-body-md">Take a screenshot of the transaction.</p>
+</div>
+<div class="flex gap-4">
+<span class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">3</span>
+<p class="font-body-md">Send the transaction screenshot to our WhatsApp.</p>
+</div>
+</div>
+<button class="w-full mt-8 border border-outline text-on-surface font-bold py-3 rounded-full hover:bg-surface-container-high transition-colors" onclick="document.getElementById('charge-modal').classList.add('hidden')">
+      Got it
+    </button>
+</div>
+</div>
+
+
+
+
+</body></html>

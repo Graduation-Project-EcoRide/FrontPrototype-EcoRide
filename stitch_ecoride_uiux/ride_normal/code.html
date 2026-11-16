@@ -1,0 +1,297 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>EcoRide - My Rides</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#005316",
+                        "surface-variant": "#e0e3e0",
+                        "secondary-fixed": "#bcedd7",
+                        "outline": "#6f7a6c",
+                        "on-primary-fixed": "#002105",
+                        "background": "#f7faf7",
+                        "inverse-on-surface": "#eef1ee",
+                        "on-surface": "#181c1b",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#4e6450",
+                        "primary-fixed-dim": "#7adc7d",
+                        "on-background": "#181c1b",
+                        "inverse-surface": "#2d3130",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e6e9e6",
+                        "on-surface-variant": "#3f4a3d",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#ecefec",
+                        "surface": "#f7faf7",
+                        "tertiary-fixed": "#d0e9d1",
+                        "primary": "#006e21",
+                        "on-primary-container": "#067625",
+                        "surface-dim": "#d8dbd8",
+                        "on-tertiary-fixed-variant": "#374c3a",
+                        "secondary-fixed-dim": "#a0d1bc",
+                        "secondary-container": "#b9ead4",
+                        "outline-variant": "#becab9",
+                        "on-secondary-fixed-variant": "#214f3f",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#556b57",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#d2ebd2",
+                        "primary-container": "#98fb98",
+                        "surface-tint": "#006e21",
+                        "tertiary-fixed-dim": "#b5cdb5",
+                        "on-secondary-fixed": "#002116",
+                        "surface-container-highest": "#e0e3e0",
+                        "on-secondary-container": "#3e6b5a",
+                        "primary-fixed": "#96f996",
+                        "surface-container-low": "#f1f4f1",
+                        "surface-bright": "#f7faf7",
+                        "on-tertiary-fixed": "#0b2011",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#7adc7d",
+                        "secondary": "#396756"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-gap-md": "24px",
+                        "stack-gap-lg": "40px",
+                        "container-padding": "24px",
+                        "stack-gap-sm": "12px",
+                        "gutter": "16px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-sm": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="text-on-background min-h-screen flex flex-col font-body-md">
+<!-- TopAppBar -->
+<header class="dark:bg-surface-dim docked full-width top-0 z-40 sticky border-b border-outline-variant bg-surface-dim">
+<div class="flex justify-between items-center w-full px-container-padding py-4 max-w-7xl mx-auto relative"><div class="w-10"></div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-primary dark:text-primary-fixed">EcoRide</h1>
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-primary dark:text-primary-fixed hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button></div>
+</header>
+<!-- SideNav (Web) -->
+<nav class="hidden md:flex flex-col w-80 h-[calc(100vh-80px)] fixed left-0 top-[80px] bg-surface shadow-lg z-30 py-stack-gap-md rounded-r-lg">
+<div class="px-container-padding mb-stack-gap-md flex items-center gap-4">
+<div class="w-16 h-16 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="User profile avatar" class="w-full h-full object-cover" data-alt="A close up portrait photo of a smiling person, used as a profile picture placeholder. The lighting is soft and natural, emphasizing approachability. The image fits the organic minimalism style of the platform with soft tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSbON31eJbpqA4eCSl3XWmhT65VIRmNx-KxfFl97yTGtZqhSCjDCO6npWL2FTos55wKlGpJ_yyTFFs68g6kTAnawuMLFCTX1dtm6i9zFU8_KD_aumD7TVCumKrIih_XXioqNYSTei4YlAwAAwSmE_QLgHbriYGcSM0LYE4c4cGf3JAKClQu1628eEyamyn_mXX4mPqgL6dNNidhpN7o-Q2-x3qND5u6ePgQg9-ifwLls2mBBlgBAKwRJTxSA5RNzct35Sh1AsonPQ">
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-primary">Green Traveler</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">12.4kg CO2 saved</p>
+<p class="font-label-md text-label-md text-secondary mt-1 bg-secondary-container inline-block px-2 py-0.5 rounded-full">Eco Level 4</p>
+</div>
+</div>
+<div class="flex-1 flex flex-col gap-2">
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-colors rounded-full font-body-md text-body-md" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+                Home
+            </a>
+<a class="bg-primary-container text-on-primary-container rounded-full mx-2 px-4 py-3 flex items-center gap-4 opacity-100 hover:bg-surface-container-high transition-colors font-body-md text-body-md font-bold" href="#"><span class="material-symbols-outlined" data-icon="directions_car" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">directions_car</span>
+                Rides
+            </a>
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-colors rounded-full font-body-md text-body-md" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+                Profile
+            </a>
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-colors rounded-full font-body-md text-body-md" href="#">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+                Notifications
+            </a>
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-colors rounded-full font-body-md text-body-md" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+                Settings
+            </a>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-1 md:ml-80 px-container-padding py-stack-gap-lg max-w-4xl mx-auto w-full pb-32 md:pb-stack-gap-lg"><section class="flex flex-col gap-stack-gap-md mb-stack-gap-lg">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Find a ride</h2>
+<div class="flex flex-col gap-4 bg-surface-container-low p-6 rounded-lg">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">location_on</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface rounded-full border-none focus:ring-2 focus:ring-primary text-body-md shadow-sm" placeholder="Pick up location" type="text">
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">near_me</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface rounded-full border-none focus:ring-2 focus:ring-primary text-body-md shadow-sm" placeholder="Drop off location" type="text">
+</div>
+<button class="w-full bg-primary text-on-primary font-bold py-3 rounded-full hover:bg-opacity-90 transition-all flex items-center justify-center gap-2 mt-2 shadow-md">
+<span class="material-symbols-outlined">search</span>
+            Search
+        </button>
+</div>
+</section>
+<section class="flex flex-col gap-stack-gap-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface px-2">Search Results</h3>
+<div class="flex flex-col gap-4">
+<!-- Ride Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-4 rounded-lg shadow-sm">
+<div class="flex justify-between items-start mb-4">
+<div class="flex items-center gap-3">
+<img alt="Driver 1" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uiq3Lt2azNpAkjZLmTRQU1-aZPb4Uni1nWRXrnN299IMnb5kCbMs_20qxDujPQt4fPkrO-hMQwljIP6Qo4wdbKTtlAjYxJFfWiHpNNt67iFtJ5MPsSp6VF_5Txy_mM_ONeVwvyMeiCPFjwpAdedaibCz4O6fvZhaFLTVflbrauppA-11NMLgt3Cv5UZNpbnLbG9dGRjobN1H2lU0j-2IGjEkEEnEK7x6XluFkzs6gfldJEnU-KeLZLh968">
+<div>
+<p class="font-bold text-on-surface">Alex Johnson</p>
+<div class="flex items-center gap-1 text-secondary text-label-md">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                            4.9 • 120 rides
+                        </div>
+</div>
+</div>
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-label-md font-bold">5.2kg CO2 saved</span>
+</div>
+<div class="flex gap-4 mb-4">
+<div class="flex flex-col items-center py-1">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-0.5 flex-1 bg-outline-variant"></div>
+<div class="w-2 h-2 rounded-full border-2 border-primary"></div>
+</div>
+<div class="flex flex-col justify-between h-20 text-body-sm text-on-surface-variant">
+<div class="">Downtown Station</div>
+<div class="">Green Valley Office Park</div>
+</div>
+</div>
+<div class="flex justify-between items-center pt-2 border-t border-outline-variant">
+<p class="text-headline-md text-primary font-bold">$12.50</p>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-full font-label-md text-label-md flex items-center gap-1 mr-auto ml-2">
+<span class="material-symbols-outlined text-[14px]">event_seat</span>
+<span class="">Seats 2/3</span>
+</span><button class="bg-secondary text-on-secondary px-6 py-2 rounded-full text-label-md font-bold hover:bg-on-secondary-fixed-variant transition-colors">Book Ride</button>
+</div>
+</div>
+<!-- Ride Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-4 rounded-lg shadow-sm">
+<div class="flex justify-between items-start mb-4">
+<div class="flex items-center gap-3">
+<img alt="Driver 2" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uixqAUYkud0b-InkTmDL3RB1f1mQp15aonu1RJtWsiRmSS90eQbouMzP8rXMVKL39vPPKyDX-OhvYzDq8TKZbtznBU9FPJiuI425BWwdmQw3Y6gAwBXhnTzcD6ttgymt5MVLmG1gM7wVEt6osmAcocy4JgN8yxEPTjAS8Z2mvHAgzvK6snu84pIB55En2qLyCd2DBe_1qNK9auJW9IDT6by3papYoGeeRXir_Qv048ZO4lkGY95VZrTz0M">
+<div>
+<p class="font-bold text-on-surface">David Miller</p>
+<div class="flex items-center gap-1 text-secondary text-label-md">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                            4.7 • 85 rides
+                        </div>
+</div>
+</div>
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-label-md font-bold">4.8kg CO2 saved</span>
+</div>
+<div class="flex gap-4 mb-4">
+<div class="flex flex-col items-center py-1">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-0.5 flex-1 bg-outline-variant"></div>
+<div class="w-2 h-2 rounded-full border-2 border-primary"></div>
+</div>
+<div class="flex flex-col justify-between h-20 text-body-sm text-on-surface-variant">
+<div class="">West End Mall</div>
+<div class="">Innovation Hub</div>
+</div>
+</div>
+<div class="flex justify-between items-center pt-2 border-t border-outline-variant">
+<p class="text-headline-md text-primary font-bold">$10.00</p>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-full font-label-md text-label-md flex items-center gap-1 mr-auto ml-2">
+<span class="material-symbols-outlined text-[14px]">event_seat</span>
+<span class="">Seats 1/4</span>
+</span><button class="bg-secondary text-on-secondary px-6 py-2 rounded-full text-label-md font-bold hover:bg-on-secondary-fixed-variant transition-colors">Book Ride</button>
+</div>
+</div>
+<!-- Ride Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-4 rounded-lg shadow-sm opacity-90">
+<div class="flex justify-between items-start mb-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-outline">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Sarah Chen</p>
+<div class="flex items-center gap-1 text-secondary text-label-md">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                            5.0 • 42 rides
+                        </div>
+</div>
+</div>
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-label-md font-bold">6.1kg CO2 saved</span>
+</div>
+<div class="flex gap-4 mb-4">
+<div class="flex flex-col items-center py-1">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-0.5 flex-1 bg-outline-variant"></div>
+<div class="w-2 h-2 rounded-full border-2 border-primary"></div>
+</div>
+<div class="flex flex-col justify-between h-20 text-body-sm text-on-surface-variant">
+<div class="">Eco Library</div>
+<div class="">Central Square</div>
+</div>
+</div>
+<div class="flex justify-between items-center pt-2 border-t border-outline-variant">
+<p class="text-headline-md text-primary font-bold">$15.20</p>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-full font-label-md text-label-md flex items-center gap-1 mr-auto ml-2">
+<span class="material-symbols-outlined text-[14px]">event_seat</span>
+<span class="">Seats 3/4</span>
+</span><button class="bg-secondary text-on-secondary px-6 py-2 rounded-full text-label-md font-bold hover:bg-on-secondary-fixed-variant transition-colors">Book Ride</button>
+</div>
+</div>
+</div>
+</section></main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden bg-surface-container dark:bg-surface-container-highest docked full-width bottom-0 rounded-t-lg fixed left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe shadow-lg">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-6 py-2 hover:text-primary dark:hover:text-primary-fixed-dim font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+            Home
+        </a>
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-on-primary-fixed-variant text-on-primary-container dark:text-primary-fixed rounded-xl px-6 py-2 scale-90 transition-all duration-200 font-label-md text-label-md" href="#"><span class="material-symbols-outlined mb-1" data-icon="directions_car" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">directions_car</span>
+            Rides
+        </a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-6 py-2 hover:text-primary dark:hover:text-primary-fixed-dim font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined mb-1">map</span>
+            Map
+        </a><a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-6 py-2 hover:text-primary dark:hover:text-primary-fixed-dim font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+            Settings
+        </a>
+</nav>
+
+
+</body></html>

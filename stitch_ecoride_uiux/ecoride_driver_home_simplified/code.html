@@ -1,0 +1,244 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>EcoRide Driver - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .material-symbols-outlined.filled { font-variation-settings: 'FILL' 1; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#d7e4ec",
+                      "on-background": "#191c1d",
+                      "background": "#f8f9fa",
+                      "outline": "#6e7976",
+                      "surface-container-highest": "#e1e3e4",
+                      "inverse-primary": "#84d5c5",
+                      "secondary": "#546067",
+                      "primary-container": "#00695c",
+                      "tertiary": "#004f46",
+                      "tertiary-fixed": "#8df5e4",
+                      "surface": "#f8f9fa",
+                      "on-secondary-fixed": "#111d23",
+                      "primary-fixed-dim": "#84d5c5",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-on-surface": "#f0f1f2",
+                      "error": "#ba1a1a",
+                      "tertiary-container": "#00695e",
+                      "on-error-container": "#93000a",
+                      "on-primary-container": "#94e5d5",
+                      "on-secondary-fixed-variant": "#3c494f",
+                      "error-container": "#ffdad6",
+                      "on-tertiary": "#ffffff",
+                      "surface-container": "#edeeef",
+                      "surface-dim": "#d9dadb",
+                      "surface-variant": "#e1e3e4",
+                      "on-surface-variant": "#3e4946",
+                      "primary-fixed": "#a0f2e1",
+                      "tertiary-fixed-dim": "#70d8c8",
+                      "on-tertiary-container": "#81e8d7",
+                      "on-tertiary-fixed-variant": "#005048",
+                      "primary": "#004f45",
+                      "on-secondary-container": "#5a666d",
+                      "on-primary-fixed": "#00201b",
+                      "on-error": "#ffffff",
+                      "surface-container-low": "#f3f4f5",
+                      "on-surface": "#191c1d",
+                      "inverse-surface": "#2e3132",
+                      "secondary-fixed-dim": "#bbc8d0",
+                      "on-tertiary-fixed": "#00201c",
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed-variant": "#005046",
+                      "secondary-container": "#d7e4ec",
+                      "surface-tint": "#046b5e",
+                      "outline-variant": "#bec9c5",
+                      "on-primary": "#ffffff",
+                      "surface-container-high": "#e7e8e9",
+                      "surface-bright": "#f8f9fa"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "xs": "4px",
+                      "gutter": "16px",
+                      "md": "16px",
+                      "sm": "12px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "40px",
+                      "xl": "32px",
+                      "lg": "24px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Plus Jakarta Sans"],
+                      "headline-sm": ["Plus Jakarta Sans"],
+                      "label-lg": ["Plus Jakarta Sans"],
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "headline-lg-mobile": ["Plus Jakarta Sans"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "headline-lg": ["Plus Jakarta Sans"],
+                      "label-sm": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                      "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-[90px] antialiased">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-surface shadow-sm">
+<div class="flex items-center justify-between px-margin-mobile w-full h-16">
+<div class="w-10"></div> <!-- Placeholder for alignment -->
+<h1 class="font-headline-md text-headline-md font-bold text-primary">EcoRide</h1>
+<button class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors rounded-full cursor-pointer active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</header>
+<main class="px-margin-mobile md:px-margin-desktop py-lg max-w-4xl mx-auto space-y-xl">
+<!-- Balance Card -->
+<section class="bg-surface-container-low rounded-xl p-md shadow-sm border border-surface-variant relative overflow-hidden">
+<div class="flex justify-between items-start mb-md">
+<div class="flex flex-col">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-xs">CliQ-Funded Wallet</p>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">124.50 JOD</h2>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-fixed-variant">account_balance_wallet</span>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-lg text-label-lg py-md rounded-full shadow-md flex items-center justify-center gap-sm active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+                Charge Account
+            </button>
+</section>
+<!-- Create Ride Section -->
+<section class="space-y-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">My Rides</h3>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-sm border border-surface-variant flex flex-col justify-center items-center text-center space-y-sm hover:shadow-md transition-shadow">
+<button class="bg-primary text-on-primary font-label-lg text-label-lg w-full md:w-1/2 py-md rounded-full shadow-md flex items-center justify-center gap-sm active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined filled">add_circle</span>
+                    Create New Ride
+                </button>
+<p class="font-body-md text-body-md text-on-surface-variant">Set up your next route and start earning.</p>
+</div>
+</section>
+<!-- Active/Created Rides -->
+<section class="space-y-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">My Rides</h3>
+<button class="text-primary font-label-lg text-label-lg hover:underline">View All</button>
+</div>
+<div class="space-y-sm">
+<!-- Ride Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-md shadow-sm border border-surface-variant border-l-4 border-l-primary flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-xs">
+<span class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-sm py-xs rounded-full">Active</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant">Today, 2:30 PM</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">$45.00</span>
+</div>
+<div class="flex items-center gap-md relative py-sm">
+<!-- Route Line connecting points -->
+<div class="absolute left-[11px] top-6 bottom-6 w-[2px] bg-outline-variant"></div>
+<div class="flex flex-col gap-md z-10 w-full">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-outline bg-surface-container-lowest rounded-full text-[20px]">trip_origin</span>
+<p class="font-body-md text-body-md text-on-surface truncate">Downtown Station</p>
+</div>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary bg-surface-container-lowest rounded-full text-[20px]">location_on</span>
+<p class="font-body-md text-body-md text-on-surface truncate">Northtown Mall</p>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-center border-t border-surface-variant pt-sm mt-xs">
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span class="font-label-sm text-label-sm">3 Seats Available</span>
+</div>
+<button class="text-primary font-label-lg text-label-lg">Manage</button>
+</div>
+</div>
+<!-- Ride Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-md shadow-sm border border-surface-variant flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-xs">
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-sm py-xs rounded-full">Scheduled</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant">Tomorrow, 8:00 AM</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">$32.00</span>
+</div>
+<div class="flex items-center gap-md relative py-sm">
+<div class="absolute left-[11px] top-6 bottom-6 w-[2px] bg-outline-variant"></div>
+<div class="flex flex-col gap-md z-10 w-full">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-outline bg-surface-container-lowest rounded-full text-[20px]">trip_origin</span>
+<p class="font-body-md text-body-md text-on-surface truncate">Westside Apartments</p>
+</div>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-outline bg-surface-container-lowest rounded-full text-[20px]">location_on</span>
+<p class="font-body-md text-body-md text-on-surface truncate">University Campus</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe shadow-[0_-4px_10px_rgba(0,0,0,0.05)] bg-surface-container md:hidden">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-6 py-1 active:scale-90 transition-transform duration-150 group" href="#">
+<span class="material-symbols-outlined filled group-hover:text-primary transition-all" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm group-hover:text-primary transition-all">Home</span>
+</a>
+<!-- Messages -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 active:scale-90 transition-transform duration-150 group hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-all" data-icon="chat">chat</span>
+<span class="font-label-sm text-label-sm group-hover:text-primary transition-all">Messages</span>
+</a>
+<!-- Map -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 active:scale-90 transition-transform duration-150 group hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-all" data-icon="map">map</span>
+<span class="font-label-sm text-label-sm group-hover:text-primary transition-all">Map</span>
+</a>
+<!-- Settings -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 active:scale-90 transition-transform duration-150 group hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-all" data-icon="settings">settings</span>
+<span class="font-label-sm text-label-sm group-hover:text-primary transition-all">Settings</span>
+</a>
+</nav>
+
+
+</body></html>

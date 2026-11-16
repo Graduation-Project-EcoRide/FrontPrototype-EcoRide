@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EcoRide Driver - Settings</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "outline-variant": "#bec9c5",
+                "primary-fixed": "#a0f2e1",
+                "tertiary-fixed": "#8df5e4",
+                "primary-container": "#00695c",
+                "surface-container-highest": "#e1e3e4",
+                "tertiary-fixed-dim": "#70d8c8",
+                "on-primary-container": "#94e5d5",
+                "surface-variant": "#e1e3e4",
+                "secondary": "#546067",
+                "on-primary-fixed-variant": "#005046",
+                "surface-container-high": "#e7e8e9",
+                "secondary-fixed-dim": "#bbc8d0",
+                "on-tertiary": "#ffffff",
+                "surface": "#f8f9fa",
+                "on-background": "#191c1d",
+                "secondary-container": "#d7e4ec",
+                "error": "#ba1a1a",
+                "on-primary": "#ffffff",
+                "secondary-fixed": "#d7e4ec",
+                "primary-fixed-dim": "#84d5c5",
+                "on-tertiary-container": "#81e8d7",
+                "surface-tint": "#046b5e",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary": "#ffffff",
+                "on-secondary-fixed-variant": "#3c494f",
+                "on-tertiary-fixed": "#00201c",
+                "on-surface-variant": "#3e4946",
+                "inverse-surface": "#2e3132",
+                "on-surface": "#191c1d",
+                "outline": "#6e7976",
+                "on-primary-fixed": "#00201b",
+                "surface-container-low": "#f3f4f5",
+                "inverse-on-surface": "#f0f1f2",
+                "tertiary-container": "#00695e",
+                "on-tertiary-fixed-variant": "#005048",
+                "on-secondary-container": "#5a666d",
+                "error-container": "#ffdad6",
+                "on-secondary-fixed": "#111d23",
+                "on-error-container": "#93000a",
+                "inverse-primary": "#84d5c5",
+                "surface-container": "#edeeef",
+                "surface-bright": "#f8f9fa",
+                "surface-dim": "#d9dadb",
+                "on-error": "#ffffff",
+                "background": "#f8f9fa",
+                "tertiary": "#004f46",
+                "primary": "#004f45"
+        },
+        "borderRadius": {
+                "DEFAULT": "1rem",
+                "lg": "2rem",
+                "xl": "3rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "margin-desktop": "40px",
+                "margin-mobile": "20px",
+                "xs": "4px",
+                "gutter": "16px",
+                "lg": "24px",
+                "sm": "12px",
+                "base": "8px",
+                "md": "16px",
+                "xl": "32px",
+                "container-padding": "24px",
+                "stack-gap-md": "24px",
+                "stack-gap-lg": "40px",
+                "stack-gap-sm": "12px"
+        },
+        "fontFamily": {
+                "label-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-sm": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg-mobile": [
+                        "Plus Jakarta Sans"
+                ],
+                "body-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "body-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "label-sm": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-xl": [
+                        "Plus Jakarta Sans"
+                ]
+        },
+        "fontSize": {
+                "label-lg": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-sm": [
+                        "20px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "28px",
+                        {
+                                "lineHeight": "36px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.04em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "headline-xl": [
+                        "40px",
+                        {
+                                "lineHeight": "48px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        body { background-color: theme('colors.surface'); color: theme('colors.on-surface'); }
+        /* Ambient shadow utility based on design system rules */
+        .shadow-ambient {
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="font-body-md min-h-screen flex antialiased selection:bg-primary-container selection:text-on-primary-container bg-surface text-on-surface">
+<!-- Navigation Drawer (Web) -->
+<aside class="hidden md:flex flex-col bg-surface-container-lowest shadow-lg h-full w-80 rounded-r-lg fixed inset-y-0 left-0 z-50 py-stack-gap-md border-r border-outline-variant">
+<div class="px-6 mb-stack-gap-md flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high border-2 border-primary-container">
+<img alt="User profile avatar" class="w-full h-full object-cover" data-alt="A close-up, high-key portrait of a smiling person with a natural, approachable look. The background is a soft, airy white, matching a light-mode aesthetic. The lighting is bright and diffused, highlighting natural skin tones against subtle mint green environmental reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUPQoa-sKqI-x9dKcDgAvY6G56HBxRfRX5k5QljqP1g9RWqoV1UqFxjJASAIuHzZ8bTF7fzWL0EVcdD9MBtay4kxhbcOBI6sIBKnZXJYb_MW90_gWP8bYs1-PoAVHvClt5mT3JNoyuok4YRbFtvzQfHd1gIbC-bch9rIYHCuVaTrMismBmpp_4jenAcKHdB5ha3_-kyfy44wjU6yz9iOQ-A3P1Ah9SLQ6TU3EpTeRvV0yep-cTk7HVQPuFUFZ_AhGBQuC8olPHU3U"/>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-primary">Pro Driver</h2>
+<p class="font-body-sm text-sm text-secondary">Eco Tier: Gold</p>
+</div>
+</div>
+<nav class="flex-1 flex flex-col gap-2 mt-4">
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-colors rounded-full" href="#">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="font-body-md text-body-md font-medium">Dashboard</span>
+</a>
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-colors rounded-full" href="#">
+<span class="material-symbols-outlined text-[24px]">directions_car</span>
+<span class="font-body-md text-body-md font-medium">My Rides</span>
+</a>
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-colors rounded-full" href="#">
+<span class="material-symbols-outlined text-[24px]">person</span>
+<span class="font-body-md text-body-md font-medium">Account</span>
+</a>
+<a class="text-on-surface-variant mx-2 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-colors rounded-full" href="#">
+<span class="material-symbols-outlined text-[24px]">notifications</span>
+<span class="font-body-md text-body-md font-medium">Notifications</span>
+</a>
+<a class="bg-primary-container text-on-primary-container rounded-full mx-2 px-4 py-3 flex items-center gap-4 transition-all duration-150" href="#">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-body-md text-body-md font-medium">Settings</span>
+</a>
+</nav>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col w-full md:ml-80 pb-[90px] md:pb-0 transition-all duration-300">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-40 shadow-sm border-b w-full bg-surface-container-lowest border-outline-variant">
+<div class="flex items-center w-full px-container-padding py-4 max-w-7xl mx-auto"><div class="flex-1"></div><h1 class="font-headline-lg text-headline-lg font-bold text-primary text-center">EcoRide</h1><div class="flex-1 flex justify-end"><button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low transition-colors text-on-surface-variant"><span class="material-symbols-outlined text-[24px]">notifications</span></button></div></div>
+</header>
+<!-- Settings Content -->
+<div class="flex-1 w-full max-w-4xl mx-auto px-container-padding py-stack-gap-lg">
+<div class="mb-stack-gap-md">
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Settings</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">Manage your driver preferences and account details.</p>
+</div>
+<!-- Bento Grid Layout for Settings -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-gap-md">
+<!-- Account Management Card -->
+<div class="bg-surface-container-lowest rounded-lg p-stack-gap-md shadow-ambient border border-outline-variant/30 flex flex-col gap-stack-gap-sm md:col-span-2">
+<h3 class="font-headline-md text-headline-md text-primary mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">manage_accounts</span>
+                        Account Management
+                    </h3>
+<button class="group flex items-center justify-between w-full py-3 px-4 rounded-full hover:bg-surface-container-low transition-colors text-left border border-transparent hover:border-outline-variant">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div>
+<span class="block font-body-lg text-body-lg text-on-surface font-medium group-hover:text-primary transition-colors">Personal Information</span>
+<span class="block font-body-sm text-sm text-on-surface-variant">Update your name, email, and phone number</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">chevron_right</span>
+</button>
+<button class="group flex items-center justify-between w-full py-3 px-4 rounded-full hover:bg-surface-container-low transition-colors text-left border border-transparent hover:border-outline-variant">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined">swap_horiz</span>
+</div>
+<div>
+<span class="block font-body-lg text-body-lg text-on-surface font-medium group-hover:text-primary transition-colors">Become a Passenger</span>
+<span class="block font-body-sm text-sm text-on-surface-variant">Switch to the passenger view to book rides and travel easily.</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">chevron_right</span>
+</button></div>
+<!-- Appearance Card -->
+<div class="bg-surface-container-lowest rounded-lg p-stack-gap-md shadow-ambient border border-outline-variant/30 flex flex-col gap-stack-gap-sm">
+<h3 class="font-headline-md text-headline-md text-primary mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">palette</span>
+                        Appearance
+                    </h3>
+<div class="flex items-center justify-between w-full py-3 px-4 rounded-full hover:bg-surface-container-low transition-colors border border-transparent hover:border-outline-variant">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined">light_mode</span>
+</div>
+<span class="font-body-lg text-body-lg text-on-surface font-medium">Dark Mode</span>
+</div>
+<!-- Toggle Switch (Inactive state for dark mode) -->
+<button aria-checked="false" class="relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-surface-variant transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background" role="switch" type="button">
+<span class="translate-x-0 pointer-events-none inline-block h-6 w-6 transform rounded-full bg-outline shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+<button class="group flex items-center justify-between w-full py-3 px-4 rounded-full hover:bg-surface-container-low transition-colors text-left border border-transparent hover:border-outline-variant">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined">language</span>
+</div>
+<span class="font-body-lg text-body-lg text-on-surface font-medium group-hover:text-primary transition-colors">Language</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="font-body-sm text-sm">English</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+</button>
+</div>
+<!-- Privacy & Security Card -->
+<div class="bg-surface-container-lowest rounded-lg p-stack-gap-md shadow-ambient border border-outline-variant/30 flex flex-col gap-stack-gap-sm">
+<h3 class="font-headline-md text-headline-md text-primary mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">security</span>
+                        Privacy
+                    </h3>
+<button class="group flex items-center justify-between w-full py-3 px-4 rounded-full hover:bg-surface-container-low transition-colors text-left border border-transparent hover:border-outline-variant">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<span class="font-body-lg text-body-lg text-on-surface font-medium group-hover:text-primary transition-colors">Location Services</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">chevron_right</span>
+</button><button class="group flex items-center justify-between w-full py-3 px-4 rounded-full hover:bg-surface-container-low transition-colors text-left border border-transparent hover:border-outline-variant">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined">history</span>
+</div>
+<span class="font-body-lg text-body-lg text-on-surface font-medium group-hover:text-primary transition-colors">Ride History</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">chevron_right</span>
+</button>
+<button class="group flex items-center justify-between w-full py-3 px-4 rounded-full hover:bg-surface-container-low transition-colors text-left border border-transparent hover:border-outline-variant">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined">lock</span>
+</div>
+<span class="font-body-lg text-body-lg text-on-surface font-medium group-hover:text-primary transition-colors">Password &amp; Security</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">chevron_right</span>
+</button>
+</div>
+<!-- Help & Support Card -->
+<div class="bg-surface-container-lowest rounded-lg p-stack-gap-md shadow-ambient border border-outline-variant/30 flex flex-col gap-stack-gap-sm md:col-span-2">
+<h3 class="font-headline-md text-headline-md text-primary mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">help</span>
+                        Help &amp; Support
+                    </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<button class="group flex items-center gap-4 py-4 px-6 rounded-full bg-surface-container-lowest border border-outline-variant hover:border-primary hover:shadow-sm transition-all text-left">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">support_agent</span>
+</div>
+<div>
+<span class="block font-body-lg text-body-lg text-on-surface font-medium group-hover:text-primary transition-colors">Contact Support</span>
+<span class="block font-body-sm text-sm text-on-surface-variant mt-1">24/7 assistance for your rides</span>
+</div>
+</button>
+<button class="group flex items-center gap-4 py-4 px-6 rounded-full bg-surface-container-lowest border border-outline-variant hover:border-primary hover:shadow-sm transition-all text-left">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">menu_book</span>
+</div>
+<div>
+<span class="block font-body-lg text-body-lg text-on-surface font-medium group-hover:text-primary transition-colors">Help Center</span>
+<span class="block font-body-sm text-sm text-on-surface-variant mt-1">FAQs and community guides</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Action Button Container -->
+<div class="md:col-span-2 flex justify-center mt-stack-gap-sm">
+<button class="font-label-lg text-label-lg text-error px-6 py-3 rounded-full hover:bg-error-container/20 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+                        Log Out
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe bg-surface-container-lowest shadow-lg rounded-t-lg border-t border-outline-variant">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-6 py-2 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined mb-1">dashboard</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-6 py-2 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined mb-1">directions_car</span>
+<span class="font-label-sm text-label-sm">Rides</span>
+</a><a class="flex flex-col items-center justify-center text-on-surface-variant px-6 py-2 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined mb-1">map</span><span class="font-label-sm text-label-sm">Map</span></a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-6 py-2 transition-all duration-200" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-label-sm text-label-sm">Settings</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>EcoRide - Sign Up</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#005316",
+                        "surface-variant": "#e0e3e0",
+                        "secondary-fixed": "#bcedd7",
+                        "outline": "#6f7a6c",
+                        "on-primary-fixed": "#002105",
+                        "background": "#f7faf7",
+                        "inverse-on-surface": "#eef1ee",
+                        "on-surface": "#181c1b",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#4e6450",
+                        "primary-fixed-dim": "#7adc7d",
+                        "on-background": "#181c1b",
+                        "inverse-surface": "#2d3130",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e6e9e6",
+                        "on-surface-variant": "#3f4a3d",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#ecefec",
+                        "surface": "#f7faf7",
+                        "tertiary-fixed": "#d0e9d1",
+                        "primary": "#006e21",
+                        "on-primary-container": "#067625",
+                        "surface-dim": "#d8dbd8",
+                        "on-tertiary-fixed-variant": "#374c3a",
+                        "secondary-fixed-dim": "#a0d1bc",
+                        "secondary-container": "#b9ead4",
+                        "outline-variant": "#becab9",
+                        "on-secondary-fixed-variant": "#214f3f",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#556b57",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#d2ebd2",
+                        "primary-container": "#98fb98",
+                        "surface-tint": "#006e21",
+                        "tertiary-fixed-dim": "#b5cdb5",
+                        "on-secondary-fixed": "#002116",
+                        "surface-container-highest": "#e0e3e0",
+                        "on-secondary-container": "#3e6b5a",
+                        "primary-fixed": "#96f996",
+                        "surface-container-low": "#f1f4f1",
+                        "surface-bright": "#f7faf7",
+                        "on-tertiary-fixed": "#0b2011",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#7adc7d",
+                        "secondary": "#396756"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-gap-md": "24px",
+                        "stack-gap-lg": "40px",
+                        "container-padding": "24px",
+                        "stack-gap-sm": "12px",
+                        "gutter": "16px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-sm": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background min-h-screen text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+<div class="min-h-screen grid grid-cols-1 lg:grid-cols-2">
+<!-- Form Section -->
+<div class="flex flex-col justify-center px-container-padding py-stack-gap-lg sm:px-12 lg:px-24 relative z-10 bg-background">
+<div class="w-full max-w-[440px] mx-auto">
+<!-- Brand Anchor -->
+<div class="flex items-center gap-unit mb-stack-gap-lg">
+<span class="material-symbols-outlined text-[32px] text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">eco</span>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">EcoRide</h1>
+</div>
+<!-- Header -->
+<div class="mb-stack-gap-lg">
+<h2 class="font-headline-xl text-headline-xl text-on-surface mb-unit">Create Account</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Join the movement for sustainable mobility.</p>
+</div>
+<!-- Registration Form -->
+<form class="flex flex-col gap-stack-gap-md" onsubmit="event.preventDefault();">
+<!-- Full Name Input -->
+<div class="flex flex-col gap-unit">
+<label class="font-label-md text-label-md text-on-surface-variant ml-4 uppercase" for="fullName">Full Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-6 top-1/2 -translate-y-1/2 text-outline">person</span>
+<input class="w-full h-[56px] rounded-full bg-surface-container-lowest border border-outline/20 pl-14 pr-6 font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:border-primary-container focus:border-2 focus:outline-none transition-all duration-200" id="fullName" placeholder="Jane Doe" type="text">
+</div>
+</div>
+<!-- Phone Number Input -->
+<div class="flex flex-col gap-unit">
+<label class="font-label-md text-label-md text-on-surface-variant ml-4 uppercase" for="phone">Phone Number</label>
+<div class="relative"><span class="material-symbols-outlined absolute left-6 top-1/2 -translate-y-1/2 text-outline">call</span>
+<span class="material-symbols-outlined absolute left-6 top-1/2 -translate-y-1/2 text-outline">call</span>
+<input class="w-full h-[56px] rounded-full bg-surface-container-lowest border border-outline/20 pl-14 pr-6 font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:border-primary-container focus:border-2 focus:outline-none transition-all duration-200" id="phone" placeholder="+962 00 000 0000" type="tel">
+</div>
+</div>
+<!-- Password Input -->
+<div class="flex flex-col gap-unit">
+<label class="font-label-md text-label-md text-on-surface-variant ml-4 uppercase" for="password">Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-6 top-1/2 -translate-y-1/2 text-outline">lock</span>
+<input class="w-full h-[56px] rounded-full bg-surface-container-lowest border border-outline/20 pl-14 pr-6 font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:border-primary-container focus:border-2 focus:outline-none transition-all duration-200" id="password" placeholder="••••••••" type="password">
+</div>
+</div>
+<!-- Sign Up Button -->
+<button class="w-full h-[56px] mt-stack-gap-sm rounded-full bg-primary-container text-on-primary-container font-body-lg text-body-lg font-bold flex items-center justify-center gap-unit hover:scale-[0.98] transition-transform duration-200" type="submit">
+                        Sign Up
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</form>
+<!-- Footer Links -->
+<div class="mt-stack-gap-lg text-center">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Already have an account? 
+                        <a class="text-primary font-semibold hover:text-on-primary-container transition-colors" href="#">Log In</a>
+</p>
+</div>
+</div>
+</div>
+<!-- Decorative Image Section (Hidden on Mobile) -->
+<div class="hidden lg:block relative w-full h-full bg-tertiary-container overflow-hidden rounded-l-[3rem]">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A striking digital photography composition featuring a winding forest road bathed in soft, dappled morning sunlight. The scene emphasizes an organic minimalist aesthetic, dominated by lush, vibrant greens and airy, bright white highlights filtering through the canopy. The mood is highly optimistic, fresh, and serene, perfectly embodying modern sustainable mobility. The high-contrast lighting creates a premium, breathable atmosphere typical of high-end eco-conscious SaaS platforms." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpNeBIaFM-fhCCB-gYCh1eR8eNzoKIBnNrpWGDx1JmbnX8TruKDRM0bgM5wkr9eyUjoJwDZNDTSeIxJzNqjLTepTFf6Jql0YKxjideb6btmqi8aTHqzuYL3bR-xCvU3ZD1G_Ow5dVFrc5Y1_IS96rsD991YE-bGzHxfLg48jT18TdnEKis0-MgHAvTSHK_6aEnZAo0J9P_My79xKBYG7PYwckzdTpBGGGkpdh0tSfTDGGVRtRqIohx6rFaRV56laJxGkBTwmWysZk">
+<!-- Soft gradient overlay to integrate with theme -->
+<div class="absolute inset-0 bg-gradient-to-t from-secondary-fixed/40 to-transparent mix-blend-multiply"></div>
+</div>
+</div>
+
+
+
+
+
+
+</body></html>
